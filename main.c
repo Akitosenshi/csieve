@@ -54,4 +54,7 @@ int main(int argc, char** argv) {
 		t_format_unit = msec;
 	}
 	printf("%scounted: %d\nactual:  %d\n\ncalculated in %.*lf%s\nformatting this output took %.*lf%s\n", res, counted, NUM_PRIMES_1000000, t_p, t, t_unit, t_format_p, t_format, t_format_unit);
+	free(sieve);
+	free(res);
+	return 0;
 }
